@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nyaaa✨</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="/images/tab.png">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Decorative Background Elements -->
+    <div class="bg-decoration decoration-1"></div>
+    <div class="bg-decoration decoration-2"></div>
+    <div class="bg-decoration decoration-3"></div>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="title-wrapper">
+                    <h1 class="hero-title animate-fade-in">Hi, I'm <span class="gradient-text">Daazex</span></h1>
+                    <div class="title-decoration"></div>
+                </div>
+                <p class="hero-subtitle animate-fade-in delay-1">Your very own anime enthusiast & creative soul ✨</p>
+                <p class="hero-description animate-fade-in delay-2">
+                    Living in a world of Games, stories, and endless possibilities. 
+                    Welcome to my digital sanctuary!
+                </p>
+                <div class="hero-cta animate-fade-in delay-3">
+                    <a href="#about" class="btn btn-primary">&#8704;&#915;&#8706;&#8719;&#8593;&#8711;&#8707;&#8706;&#8711;</a>
+                    <a href="#socials" class="btn btn-secondary">Let's Connect</a>
+                </div>
+            </div>
+            <div class="hero-image animate-slide-in">
+                <div class="image-glow"></div>
+                <img src="images/top.png" alt="Character" class="character-img">
+                <div class="floating-sparkle sparkle-1">✨</div>
+                <div class="floating-sparkle sparkle-2">⭐</div>    
+                <div class="floating-sparkle sparkle-3">💫</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about" id="about">
+        <div class="section-header animate-on-scroll">
+            <h2 class="section-title">   </h2>
+            <div class="section-underline"></div>
+        </div>
+        
+        <div class="glass-card animate-on-scroll">
+            <div class="card-decoration card-deco-1"></div>
+            <div class="card-decoration card-deco-2"></div>
+            
+            <div class="about-content">
+                <div class="about-icon">  </div>
+                <h3>The Architect</h3>
+                <p>
+                    I am the architect of worlds that only draw breath behind my closed eyelids. While the world marches in straight lines and muted grays, I navigate the vibrant architecture of the imagined. I curate the resonance of the impossible—the sharp, bittersweet ache of a sunset over a forgotten skyline and the hallowed silence that follows. 
+                <p>
+                    I am anchored here, yet I am already elsewhere. You see me in the glare of the mundane, but my heart wanders through neon-veined streets and forests that pulse in rhythm with the moon. I am the bridge between the seen and the felt, a shadow dancing on the wall of a world still being drawn
+                </p>
+                </p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- AniList Stats Section -->
+    <section class="anilist-stats" id="anilist">
+        <div class="section-header animate-on-scroll">
+            <h2 class="section-title">My AniList Profile</h2>
+            <div class="section-underline"></div>
+        </div>
+
+        <div class="anilist-container">
+            <!-- Loading State -->
+            <div id="anilist-loading" class="loading-container" style="display: none;">
+                <div class="loading-spinner"></div>
+                <p>Loading your AniList data...</p>
+            </div>
+
+            <!-- User Stats Card -->
+            <div id="user-stats" class="glass-card animate-on-scroll" style="display: none;">
+                <div class="stats-header">
+                    <img id="user-avatar" src="" alt="Avatar" class="user-avatar">
+                    <div class="user-info">
+                        <h3 id="user-display-name"></h3>
+                        <a id="user-profile-link" href="" target="_blank" class="profile-link">View on AniList →</a>
+                    </div>
+                </div>
+                <div class="anilist-stats-grid">
+                    <div class="stat-box">
+                        <div class="stat-icon">📺</div>
+                        <div class="stat-value" id="total-anime">0</div>
+                        <div class="stat-label">Total Anime</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-icon">⏱️</div>
+                        <div class="stat-value" id="days-watched">0</div>
+                        <div class="stat-label">Days Watched</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-icon">🎬</div>
+                        <div class="stat-value" id="episodes-watched">0</div>
+                        <div class="stat-label">Episodes</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-icon">⭐</div>
+                        <div class="stat-value" id="mean-score">0</div>
+                        <div class="stat-label">Mean Score</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Favorites Section -->
+            <div id="favorites-section" style="display: none;">
+                <div class="section-header animate-on-scroll">
+                    <h3 class="subsection-title">Favorite Anime</h3>
+                </div>
+                <div id="favorite-anime" class="favorites-grid animate-on-scroll"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spotify Playlists Section -->
+    <section class="spotify-section" id="spotify">
+        <div class="section-header animate-on-scroll">
+            <h2 class="section-title">My Playlists</h2>
+            <div class="section-underline"></div>
+            <p class="section-subtitle">The soundtrack to my life 🎵</p>
+        </div>
+
+        <div class="spotify-container">
+            <!-- Spotify Profile Card -->
+            <div class="spotify-profile glass-card animate-on-scroll">
+                <div class="spotify-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+                    </svg>
+                </div>
+                <h3>Find me on Spotify</h3>
+                <a href="https://open.spotify.com/user/darkshadowshub" target="_blank" rel="noopener noreferrer" class="btn btn-spotify">
+                    <span>View Profile</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Playlists Grid -->
+            <div id="spotify-playlists" class="playlists-grid animate-on-scroll">
+                <!-- Playlists will be dynamically inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- My Other Interests Section -->
+    <section class="favorites">
+        <div class="section-header animate-on-scroll">
+            <h2 class="section-title">Other Interests</h2>
+            <div class="section-underline"></div>
+        </div>
+
+        <div class="favorites-grid">
+            <div class="favorite-card animate-on-scroll">
+                <div class="card-number">01</div>
+                <div class="card-image">
+                    <img src="/images/h1.jpg" alt="Interest 1">
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <h3>Coding</h3>
+                    <p>Building digital experiences that bring imagination to life with code and creativity.</p>
+                    <div class="card-tags">
+                        <span class="tag">Web Dev</span>
+                        <span class="tag">software dev</span>
+                        <span class="tag">other shit</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="favorite-card animate-on-scroll">
+                <div class="card-number">02</div>
+                <div class="card-image">
+                    <img src="/images/h2.gif" alt="Interest 2">
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <h3>Idk sleeping maybe</h3>
+                    <p>who has 3 hobbies really...</p>
+                    <div class="card-tags">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="favorite-card animate-on-scroll">
+                <div class="card-number">03</div>
+                <div class="card-image">
+                    <img src="/images/h3.jpg" alt="Interest 3">
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <h3>Gaming</h3>
+                    <p>Exploring virtual worlds and epic adventures .</p>
+                    <div class="card-tags">
+                        <span class="tag">RPG</span>
+                        <span class="tag">Adventure</span>
+                        <span class="tag">Gacha</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Socials Section -->
+    <section class="socials" id="socials">
+        <div class="section-header animate-on-scroll">
+            <h2 class="section-title">Let's Connect!</h2>
+            <div class="section-underline"></div>
+            <p class="section-subtitle">Find me across the digital universe ✨</p>
+        </div>
+
+        <div class="socials-grid animate-on-scroll">
+            <a href="https://discord.gg/GK9YsB7rfp" class="social-button discord">
+                <div class="social-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
+                    </svg>
+                </div>
+                <span class="social-label">Discord</span>
+                <div class="social-hover-effect"></div>
+            </a>
+
+            <a href="https://x.com/daazex" class="social-button twitter">
+                <div class="social-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                </div>
+                <span class="social-label">Twitter</span>
+                <div class="social-hover-effect"></div>
+            </a>
+
+            <a href="#" class="social-button github">
+                <div class="social-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                    </svg>
+                </div>
+                <span class="social-label">GitHub</span>
+                <div class="social-hover-effect"></div>
+            </a>
+
+            <a href="https://www.instagram.com/daazex.csv/" class="social-button instagram">
+                <div class="social-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+                    </svg>
+                </div>
+                <span class="social-label">Instagram</span>
+                <div class="social-hover-effect"></div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">Made with 💖 and coffee</p>
+            <p class="footer-subtitle">© 2026 daazex. Keep dreaming, keep creating!</p>
+        </div>
+        <div class="footer-decoration"></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
